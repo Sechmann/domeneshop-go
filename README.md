@@ -1,4 +1,4 @@
-# Go API client for pkg
+# Go API client for domeneshop-go
 
 # Overview
 
@@ -70,7 +70,7 @@ go get github.com/antihax/optional
 Put the package under your project folder and add the following in import:
 
 ```golang
-import "./pkg"
+import "./domeneshop-go"
 ```
 
 ## Documentation for API Endpoints

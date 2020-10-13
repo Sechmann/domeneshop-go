@@ -1,9 +1,11 @@
 generate-domeneshop-client: 
 	openapi-generator-cli generate \
-		-g go \
-		-i api/swagger.json \
-		-o ./pkg/ \
-		--additional-properties=packageName=pkg
-	cp --force pkg/README.md .
+		--generator-name go \
+		--input-spec ./api/swagger.json \
+		--output ./ \
+		--package-name domeneshop-go \
+		--git-host github.com \
+		--git-user-id VegarM \
+		--git-repo-id domeneshop-go
 
 all: generate-domeneshop-client
